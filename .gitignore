@@ -1,0 +1,35 @@
+# LaTeX intermediate files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+
+# Backup files
+*~
+*.bak
+*.bbl
+*.blg
+
+# Generated PDFs (optional: remove this line if you want to version the PDF)
+# *.pdf
+
+# TeX build artifacts
+*.xdv
+*.dvi
+*.ilg
+*.idx
+*.ind
+
+# Editor temp files
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
