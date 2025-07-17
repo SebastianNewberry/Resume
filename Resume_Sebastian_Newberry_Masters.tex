@@ -1,0 +1,224 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Sebastian Newberry} \\ \vspace{1pt}
+    \small 248-444-7804 $|$ \href{mailto:snewbe@wayne.edu}{\underline{snewbe@wayne.edu}} $|$ 
+    \href{https://linkedin.com/in/sebastian-newberry-288058191/}{\underline{linkedin.com/in/sebastian-newberry/}} $|$
+    \href{https://github.com/SebastianNewberry}{\underline{github.com/SebastianNewberry}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Wayne State University}{Detroit, MI}
+      {Bachelor of Science in Computer Science \textbar{} GPA: 3.97}{Aug. 2022 -- Dec. 2025}
+  \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Wayne State University}{Detroit, MI}
+      {M.S. with a major in A.I. Software and Systems}{Jan. 2026 -- Dec. 2026}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Detroit Public Schools X Rocket Companies}{July -- Aug. 2023, 2024, 2025}
+      {Tutor, \href{https://rocket-group-project-2024.vercel.app/}{\color{Blue}View Trivia Game Project}, \href{https://eventplanner-alpha.vercel.app/ }{\color{Blue}View Event Planner Project}}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Led a team of 5 students in a technology tutoring program funded by Rocket Companies.}
+        \resumeItem{Taught students core cybersecurity principles such as authentication token security, password hashing, and secure user input handling during web development.}
+        \resumeItem{Built an interactive WebSocket-based game to demonstrate real-time communication differences between WebSockets and traditional HTTP.}
+        \resumeItem{Deployed a backend server on a DigitalOcean VPS using Docker for containerization.}
+        
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Wayne State Cyber Defense Club}{Sep. 2022 -- Present}
+      {Windows Active Directory, View Wayne State CTF \href{https://github.com/SebastianNewberry/WSUCTF2024}{\color{Blue}2024} and \href{https://github.com/SebastianNewberry/WSUCTF2025}{\color{Blue} 2025} challenges}{Detroit, MI}
+      \resumeItemListStart
+        \resumeItem{Hardened Windows Server 2012 in the Collegiate Cyber Defense Competition (CCDC) to defend against simulated cyberattacks.}
+        \resumeItem{Identified and exploited common web vulnerabilities, including SQLi, LFI, XSS, SSRF, and CSRF, on platforms
+        such as HackTheBox and TryHackMe, while gaining expertise in their prevention techniques.}
+        \resumeItem{Regularly participated in HackTheBox challenges to strengthen my CTF skills and refine my ability to identify and
+        mitigate real-world vulnerabilities.}
+        \resumeItem{Gained hands-on experience with Bash scripting, Linux command-line tools, and Windows PowerShell in working
+        through challenges on the Hackthebox website.}
+        \resumeItem{Developed and designed web exploitation, pwn, and forensics challenges for the Wayne State University CTF competition.}
+        \resumeItem{Utilized tools like Wireshark for capturing network traffic, Ghidra for decompiling binaries, Burp Suite for web reconnaissance and exploitation.}
+        \resumeItem{Deployed CTF challenges using Docker and CTFd to create isolated, reproducible environments.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+          {\href{https://github.com/SebastianNewberry/Final_Project_Intro_LLM/blob/main/Report.pdf}{\color{Blue}\textbf{Report on RAG (Retrieval Augmented Generation)}} $|$ \emph{Python, PyTorch, LaTex}}{Feb. 2025 - Apr. 2025}
+          \resumeItemListStart
+            \resumeItem{Authored a comprehensive report on Retrieval-Augmented Generation (RAG), demonstrating how LLMs retrieve external documents to answer queries.}
+            \resumeItem{Implemented a practical demo of RAG using the RAGatouille Python library. View the notebook \href{https://colab.research.google.com/github/SebastianNewberry/Final_Project_Intro_LLM/blob/main/langchain_ollama_rag.ipynb}{\color{Blue}\textbf{here}}.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\href{https://volunteer-opportunities.vercel.app/}{\color{Blue}\textbf{Volunteer Opportunities}} $|$ \emph{ReactJs, NextJs, AWS S3, Pusher Websockets, PostgreSQL}}{Sept. 2024 -- Dec. 2024}
+          \resumeItemListStart
+            \resumeItem{Collaborated with a team of 5 to build a platform connecting volunteers with organizations.}
+            \resumeItem{Designed and implemented a messaging interface from scratch, enabling seamless real-time communication on the
+ web platform using Pusher Websockets.}
+            \resumeItem{Integrated Mapbox with the project to render listings on maps with relevant information.}
+            \resumeItem{Configured Zustand to implement efficient pagination, enabling seamless data loading without the need for page
+ refreshes.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\href{https://devpost.com/software/privatedelivery/}{\color{Blue}\textbf{MHacks 15 - Private Delivery}} $|$ \emph{ReactJs, NextJs, MySQL, Prisma}}{Feb. 2023}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack platform to match delivery requests with available drivers.}
+            \resumeItem{Gained hands-on experience through collaborative development in a 24-hour online hackathon.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, JavaScript, TypeScript, C++, Java, R, MongoDB, SQL (PostgreSQL, MySQL), HTML/CSS} \\
+     \textbf{Frameworks \& Libraries}{: Matplotlib, Node.js, NumPy, Pandas, PyTorch, React} \\
+     \textbf{Developer Tools}{: Docker, Git} \\
+     \textbf{Cloud Platforms}{: AWS (Amplify, Lambda, S3)}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
