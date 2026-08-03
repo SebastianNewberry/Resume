@@ -5,7 +5,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -54,8 +54,9 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-3pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule]
+\titlespacing*{\section}{0pt}{6pt}{4pt}
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -69,7 +70,7 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
@@ -97,7 +98,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -113,9 +114,10 @@
 
 \begin{center}
     \textbf{\Huge \scshape Sebastian Newberry} \\ \vspace{1pt}
-    \small 248-444-7804 $|$ \href{mailto:snewbe@wayne.edu}{\underline{snewbe@wayne.edu}} $|$ 
-    \href{https://linkedin.com/in/sebastian-newberry-288058191/}{\underline{linkedin.com/in/sebastian-newberry/}} $|$
+    \small 248-444-7804 $|$ \href{mailto:sebasn327@gmail.com}{\underline{sebasn327@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/sebastian-newberry-288058191/}{\underline{linkedin.com/in/sebastian-newberry-288058191/}} $|$
     \href{https://github.com/SebastianNewberry}{\underline{github.com/SebastianNewberry}}
+    \vspace{-0.8pt}
 \end{center}
 
 
@@ -125,6 +127,7 @@
     \resumeSubheading
       {Wayne State University}{Detroit, MI}
       {Bachelor of Science in Computer Science \textbar{} GPA: 3.97}{Aug. 2022 -- Dec. 2025}
+      \vspace{3pt}
   \resumeSubHeadingListEnd
 
 
@@ -133,13 +136,26 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Detroit Public Schools X Rocket Companies}{July -- Aug. 2023, 2024, 2025}
-      {Tutor, \href{https://rocket-group-project-2024.vercel.app/}{\color{Blue}View Trivia Game Project}, \href{https://eventplanner-alpha.vercel.app/ }{\color{Blue}View Event Planner Project}}{Detroit, MI}
+      {Sticker Blitz}{Warren, MI}
+      {Web Developer}{Jan. 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Enhanced an existing sticker proofing AI implementation with the Vercel AI SDK, building a workflow that detects and extends colored borders on images that website users upload, then generates precise cutlines around the artwork in the image to turn the image into a sticker.}
+        \resumeItem{Worked on multiple projects improving the user experience of the website and assisting in the release of new products such as T-shirts.}
+      \resumeItemListEnd
+    \resumeSubSubheading
+      {Wayne State University Computer Science Capstone}{Sep. 2025 -- Dec. 2025}
+      \resumeItemListStart
+        \resumeItem{Worked with three other students to develop a full-stack web application for Sticker Blitz in a capstone project for Wayne State university, delivering AI-driven customer service responses and a comprehensive customer management interface.}
+        \resumeItem{Integrated the application with Vercel for deployment, AWS Bedrock for AI services, Redis for caching, PostgreSQL as the database, Better Auth for authentication, SendGrid for email, and Pusher WebSockets for real-time communication.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Detroit Public Schools X Rocket Companies}{Detroit, MI}
+      {Tutor}{Jul. -- Aug. 2023, 2024, 2025}
       \resumeItemListStart
         \resumeItem{Led a team of 5 students in a technology tutoring program funded by Rocket Companies.}
-        \resumeItem{Taught students core cybersecurity principles such as authentication token security, password hashing, and secure user input handling during web development.}
-        \resumeItem{Built an interactive WebSocket-based game to demonstrate real-time communication differences between WebSockets and traditional HTTP.}
-        \resumeItem{Deployed a backend server on a DigitalOcean VPS using Docker for containerization.}
+        \resumeItem{Taught students core cybersecurity principles in web development such as authentication token security, using HTTPS vs HTTP when browsing the web, password hashing, and secure user input handling.}
+        \resumeItem{Built an interactive WebSocket-based trivia game using Socket.io, illustrating real-time communication advantages over HTTP request/response.}
         
       \resumeItemListEnd
       
@@ -154,20 +170,14 @@
 %-------------------------------------------
 
     \resumeSubheading
-      {Wayne State Cyber Defense Club}{Sep. 2022 -- Present}
-      {Windows Active Directory, View Wayne State CTF \href{https://github.com/SebastianNewberry/WSUCTF2024}{\color{Blue}2024} and \href{https://github.com/SebastianNewberry/WSUCTF2025}{\color{Blue} 2025} challenges}{Detroit, MI}
+      {Wayne State Cyber Defense Club}{Detroit, MI}
+      {Windows Active Directory, View Wayne State CTF \href{https://github.com/SebastianNewberry/WSUCTF2024}{\color{Blue}2024} and \href{https://github.com/SebastianNewberry/WSUCTF2025}{\color{Blue} 2025} challenges}{Sep. 2022 -- Dec. 2025}
       \resumeItemListStart
         \resumeItem{Hardened Windows Server 2012 in the Collegiate Cyber Defense Competition (CCDC) to defend against simulated cyberattacks.}
-        \resumeItem{Identified and exploited common web vulnerabilities, including SQLi, LFI, XSS, SSRF, and CSRF on platforms
-        such as HackTheBox and TryHackMe, while gaining expertise in their prevention techniques.}
-        \resumeItem{Regularly participated in HackTheBox challenges to strengthen my CTF skills and refine my ability to identify and
-        mitigate real-world vulnerabilities.}
-        \resumeItem{Gained hands-on experience with Bash scripting, Linux command-line tools, and Windows PowerShell in working
-        through challenges on the Hackthebox website.}
-        \resumeItem{Developed and designed web exploitation, pwn, and forensics challenges for the Wayne State University CTF competition.}
-        \resumeItem{Utilized tools like Wireshark for capturing network traffic, Ghidra for decompiling binaries, Burp Suite for web reconnaissance and exploitation.}
-        \resumeItem{Deployed CTF challenges using Docker and CTFd to create isolated, reproducible environments.}
+        \resumeItem{Developed and designed web exploitation, pwn, and forensics challenges for the Wayne State University CTF competition, and used Docker and CTFd to create isolated, reproducible environments to deploy them.}
+        \resumeItem{Utilized tools like Wireshark for capturing network traffic, Ghidra for decompiling binaries, and Burp Suite for web reconnaissance and exploitation.}
     \resumeItemListEnd
+      \vspace{3pt}
 
   \resumeSubHeadingListEnd
 
@@ -175,29 +185,30 @@
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
-    
+
       \resumeProjectHeading
-          {\href{https://github.com/SebastianNewberry/Final_Project_Intro_LLM/blob/main/Report.pdf}{\color{Blue}\textbf{Report on RAG (Retrieval Augmented Generation)}} $|$ \emph{Python, PyTorch, LaTex}}{Feb. 2025 - Apr. 2025}
+          {\href{https://thesivestai.com/try-research}{\color{Blue}\textbf{Thesivest}} $|$ \emph{React, Tanstack Start, SST, Vercel AI SDK, Neon, PostgreSQL, Better Auth}}{Dec. 2025 -- Present}
+          \resumeItemListStart
+            \resumeItem{Built an AI-powered investment research platform where agents search the web for company news and analyze social sentiment to evaluate investment opportunities, inspired by the open-source multi-agent framework \href{https://github.com/tauricresearch/tradingagents}{\color{Blue}\textbf{TradingAgents}}.}
+            \resumeItem{Designed the application around a single editable research report that users refine and share on the platform.}
+            \resumeItem{Made research agentic in the same way coding tools like Cursor are, with AI doing the heavy lifting while users steer it through asking follow-up questions that trigger report edits and research into new topics.}
+            \resumeItem{Deployed the project on AWS using SST, with a Cloudflare DNS proxy to mitigate malicious DDoS attacks.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\href{https://github.com/SebastianNewberry/Honors_Thesis/blob/main/thesis.pdf}{\color{Blue}\textbf{Honors Thesis - LLMs in Cybersecurity}} $|$ \emph{Python, LaTeX, OpenRouter}}{Jan. 2025 -- Dec. 2025}
+          \resumeItemListStart
+            \resumeItem{Authored a comprehensive thesis investigating whether open-source LLMs can replace proprietary counterparts in cybersecurity by comparing 10 frontier models from both ecosystems on CTF cryptography challenges.}
+            \resumeItem{Benchmarked GPT-5.1, Claude Opus 4.5, Grok 4.1, Gemini 3.0 Pro, Kimi K2, DeepSeek R1/V3, and GLM-4.6 on a SmileyCTF 2025 challenge, measuring each model's ability to derive RSA exploits from challenge code alone.}
+            \resumeItem{Found that only 3 of 10 models solved the challenge: open-source Kimi K2 Thinking and proprietary Claude Opus 4.5 and Grok 4.1 Fast, suggesting open-source models can rival proprietary ones on complex security tasks.}
+            \resumeItem{Surveyed both general and cybersecurity related benchmarks (MMLU-Pro, GPQA, HLE, CyberMetric, Cybench) and analyzed CIA triad tradeoffs for deploying open-source and proprietary LLMs in security workflows.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\href{https://github.com/SebastianNewberry/Final_Project_Intro_LLM/blob/main/Report.pdf}{\color{Blue}\textbf{Report on RAG (Retrieval Augmented Generation)}} $|$ \emph{Python, PyTorch, LaTeX}}{Feb. 2025 - Apr. 2025}
           \resumeItemListStart
             \resumeItem{Authored a comprehensive report on Retrieval-Augmented Generation (RAG), demonstrating how LLMs retrieve external documents to answer queries.}
             \resumeItem{Implemented a practical demo of RAG using the RAGatouille Python library. View the notebook \href{https://colab.research.google.com/github/SebastianNewberry/Final_Project_Intro_LLM/blob/main/langchain_ollama_rag.ipynb}{\color{Blue}\textbf{here}}.}
           \resumeItemListEnd
-      \resumeProjectHeading
-          {\href{https://volunteer-opportunities.vercel.app/}{\color{Blue}\textbf{Volunteer Opportunities}} $|$ \emph{ReactJs, NextJs, AWS S3, Pusher Websockets, PostgreSQL}}{Sept. 2024 -- Dec. 2024}
-          \resumeItemListStart
-            \resumeItem{Collaborated with a team of 5 to build a platform connecting volunteers with organizations.}
-            \resumeItem{Designed and implemented a messaging interface from scratch, enabling seamless real-time communication on the
- web platform using Pusher Websockets.}
-            \resumeItem{Integrated Mapbox with the project to render listings on maps with relevant information.}
-            \resumeItem{Configured Zustand to implement efficient pagination, enabling seamless data loading without the need for page
- refreshes.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\href{https://devpost.com/software/privatedelivery/}{\color{Blue}\textbf{MHacks 15 - Private Delivery}} $|$ \emph{ReactJs, NextJs, MySQL, Prisma}}{Feb. 2023}
-          \resumeItemListStart
-            \resumeItem{Developed a full-stack platform to match delivery requests with available drivers.}
-            \resumeItem{Gained hands-on experience through collaborative development in a 24-hour online hackathon.}
-          \resumeItemListEnd
+          \vspace{3pt}
     \resumeSubHeadingListEnd
 
 
@@ -208,9 +219,9 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: Python, JavaScript, TypeScript, C++, Java, R, MongoDB, SQL (PostgreSQL, MySQL), HTML/CSS} \\
-     \textbf{Frameworks \& Libraries}{: Matplotlib, Node.js, NumPy, Pandas, PyTorch, React} \\
-     \textbf{Developer Tools}{: Docker, Git} \\
-     \textbf{Cloud Platforms}{: AWS (Amplify, Lambda, S3)}
+     \textbf{Frameworks \& Libraries}{: Matplotlib, Node.js, React.js, Next.js, NumPy, Pandas, PyTorch} \\
+     \textbf{Developer Tools}{: Docker, Git, Cursor, Claude Code, OpenRouter} \\
+     \textbf{Cloud Platforms}{: AWS (Amplify, Lambda, S3, Bedrock, Cloudfront, DynamoDB), Cloudflare DNS, Vercel}
     }}
  \end{itemize}
 
